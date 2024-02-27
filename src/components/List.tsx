@@ -5,7 +5,7 @@ function List(props: any) {
     <section className="">
       <ul>
         <li>
-          <h6></h6>
+          <p></p>
           <button type="button">삭제</button>
         </li>
       </ul>
