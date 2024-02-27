@@ -9,6 +9,10 @@ function App() {
   return (
     // <MyProvider store={store}>
     <main>
+      <section>
+        <input type="text" placeholder="할 일을 입력해주세요" />
+        <button type="button">추가</button>
+      </section>
       <List />
     </main>
     // </MyProvider>
