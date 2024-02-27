@@ -1,9 +1,8 @@
 # wanted-pre-onboarding-frontend-challenge-19
 
-함수형 컴포넌트
-
 # 과제1 todo list 만들기
 
+함수형 컴포넌트로
 Add와 Delete 기능 2 가지를 만듭니다.
 
 1. input 창에 list1을 입력 후 Add 버튼을 누르면 input 창 하단에 list1 컴포넌트가 뜹니다.
