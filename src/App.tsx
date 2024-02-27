@@ -8,8 +8,11 @@ function App() {
 
   return (
     // <MyProvider store={store}>
-    <main>
-      <section>
+    <main className="container">
+      <header>
+        <h1>TO DO LIST</h1>
+      </header>
+      <section className="box">
         <input type="text" placeholder="할 일을 입력해주세요" />
         <button type="button">추가</button>
       </section>
