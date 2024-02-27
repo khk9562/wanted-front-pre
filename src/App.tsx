@@ -1,7 +1,12 @@
 import "./App.css";
+import List from "./components/List";
 
 function App() {
-  return <div>타입스크립트 적용</div>;
+  return (
+    <main>
+      <List />
+    </main>
+  );
 }
 
 export default App;
