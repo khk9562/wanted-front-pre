@@ -1,25 +1,33 @@
+import React from "react";
 import "./App.css";
 import List from "./components/List";
+import { createStore, applyMiddleware, compose } from "redux";
 import { Provider as MyProvider } from "react-redux";
-// import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./store";
 
-function App() {
-  // const store = configureStore({ reducer: r });
+import AddTodo from "./containers/AddTodo";
+import VisibleTodoList from "./containers/VisibleTodoList";
+import Footer from "./components/Footer";
+
+const App = () => {
+  const store = createStore(rootReducer);
 
   return (
-    // <MyProvider store={store}>
-    <main className="container">
-      <header>
-        <h1>TO DO LIST</h1>
-      </header>
-      <section className="box">
-        <input type="text" placeholder="할 일을 입력해주세요" />
-        <button type="button">추가</button>
-      </section>
-      <List />
-    </main>
-    // </MyProvider>
+    <MyProvider store={store}>
+      <main className="container">
+        <header>
+          <h1>TO DO LIST</h1>
+        </header>
+        {/* <section className="box">
+          <input type="text" placeholder="할 일을 입력해주세요" />
+          <button type="button">추가</button>
+        </section> */}
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
+      </main>
+    </MyProvider>
   );
-}
+};
 
 export default App;

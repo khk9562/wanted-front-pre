@@ -2,6 +2,8 @@
 
 # 과제1 todo list 만들기
 
+Redux Tutorial 따라하는 중
+
 함수형 컴포넌트로
 Add와 Delete 기능 2 가지를 만듭니다.
 
