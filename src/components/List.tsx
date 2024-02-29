@@ -10,6 +10,7 @@ const List = ({ todos, toggleTodo }: any) => (
       gap: "8px",
       border: "1px solid #ddd",
       width: "30vw",
+      minWidth: "380px",
       borderRadius: "10px",
       padding: "20px",
     }}

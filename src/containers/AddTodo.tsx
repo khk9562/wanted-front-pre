@@ -37,6 +37,7 @@ const AddTodo: React.FC = () => {
             border: "0 none",
             backgroundColor: "#eee",
             height: "35px",
+            minWidth: "300px",
             width: "20vw",
             borderRadius: "5px",
             paddingLeft: "8px",
