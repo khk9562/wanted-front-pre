@@ -7,7 +7,7 @@ import rootReducer from "./store";
 
 import AddTodo from "./containers/AddTodo";
 import VisibleTodoList from "./containers/VisibleTodoList";
-import Footer from "./components/Footer";
+import Footer from "./components/Filter";
 
 const App = () => {
   const store = createStore(rootReducer);
@@ -18,13 +18,9 @@ const App = () => {
         <header>
           <h1>TO DO LIST</h1>
         </header>
-        {/* <section className="box">
-          <input type="text" placeholder="할 일을 입력해주세요" />
-          <button type="button">추가</button>
-        </section> */}
         <AddTodo />
-        <VisibleTodoList />
         <Footer />
+        <VisibleTodoList />
       </main>
     </MyProvider>
   );

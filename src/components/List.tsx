@@ -3,7 +3,17 @@ import PropTypes from "prop-types";
 import Todo from "./Todo";
 
 const List = ({ todos, toggleTodo }: any) => (
-  <ul>
+  <ul
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "8px",
+      border: "1px solid #ddd",
+      width: "30vw",
+      borderRadius: "10px",
+      padding: "20px",
+    }}
+  >
     {todos.map((todo: any) => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
     ))}

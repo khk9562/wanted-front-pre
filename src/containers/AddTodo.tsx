@@ -21,9 +21,41 @@ const AddTodo: React.FC = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input value={inputValue} onChange={handleInputChange} />
-        <button type="submit">할일추가</button>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "8px",
+        }}
+      >
+        <input
+          value={inputValue}
+          onChange={handleInputChange}
+          style={{
+            border: "0 none",
+            backgroundColor: "#eee",
+            height: "35px",
+            width: "20vw",
+            borderRadius: "5px",
+            paddingLeft: "8px",
+            paddingRight: "8px",
+          }}
+        />
+        <button
+          type="submit"
+          style={{
+            border: "0 none",
+            padding: "5px 8px",
+            backgroundColor: "#333",
+            color: "#eee",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          할일추가
+        </button>
       </form>
     </div>
   );
